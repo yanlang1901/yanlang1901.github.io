@@ -1,23 +1,356 @@
-extends includes/layout.pug
+<!DOCTYPE html>
+<html lang="en">
 
-block content
-  article#post.article-entry
-    != page.content
-  // lincense
-  if(theme.copyright.enable === true && page.copyright !== false)
-    .license-wrapper
-      p 
-        span Author:  
-        a(href=config.url)= config.author
-      p 
-        span Link:  
-        a(href=page.permalink)= page.permalink
-      p 
-        span Copyright:  
-        span!= theme.copyright.license
-  include includes/partial/post-nav.pug
-  #comment
-    include includes/comment/livere.pug
-    include includes/comment/disqus.pug
-    include includes/comment/changyan.pug
-    include includes/comment/gitment.pug
+<!-- Head tag -->
+<head><meta name="generator" content="Hexo 3.8.0">
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Description-->
+    
+        <meta name="description" content="welcome">
+    
+
+    <!--Author-->
+    
+        <meta name="author" content="yanlang">
+    
+
+    <!--Open Graph Title-->
+    
+        <meta property="og:title" content="ShallowDream">
+    
+
+    <!--Open Graph Description-->
+    
+        <meta property="og:description" content="welcome">
+    
+
+    <!--Open Graph Site Name-->
+    <meta property="og:site_name" content="ShallowDream">
+
+    <!--Type page-->
+    
+        <meta property="og:type" content="website">
+    
+
+    <!--Page Cover-->
+    
+
+    <meta name="twitter:card" content="summary">
+    
+
+    <!-- Title -->
+    
+    <title>ShallowDream</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+
+    <!-- Custom Fonts -->
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="//oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Gallery -->
+    <link href="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.css" type="text/css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- Google Analytics -->
+    
+
+
+</head>
+
+
+<body>
+
+<div class="bg-gradient"></div>
+<div class="bg-pattern"></div>
+
+<!-- Menu -->
+<!--Menu Links and Overlay-->
+<div class="menu-bg">
+    <div class="menu-container">
+        <ul>
+            
+            <li class="menu-item">
+                <a href="/">
+                    Home
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="/archives">
+                    Archives
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="/about.html">
+                    About
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="/tags">
+                    Tags
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="/categories">
+                    Categories
+                </a>
+            </li>
+            
+            <li class="menu-item">
+                <a href="/contact.html">
+                    Contact
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+<!--Hamburger Icon-->
+<nav>
+    <a href="#menu"></a>
+</nav>
+
+<div class="container">
+
+    <!-- Main Content -->
+    <div class="row">
+    <div class="col-sm-12">
+
+        <!--Title and Logo-->
+        <header>
+    <div class="logo">
+        <a href="/"><i class="logo-icon fa fa-cube" aria-hidden="true"></i></a>
+        
+    </div>
+</header>
+
+        <section class="main">
+            
+<div class="post">
+
+    <div class="post-header">
+        <h1 class="title">
+            <a href="/2019/03/15/python1901简书地址/">
+                Untitled
+            </a>
+        </h1>
+        <div class="post-info">
+            
+                <span class="date">2019-03-15</span>
+            
+            
+            
+        </div>
+    </div>
+
+    <div class="content">
+
+        <!-- Gallery -->
+        
+
+        <!-- Post Content -->
+        <p><a href="https://www.jianshu.com/u/51e886f02ac3" target="_blank" rel="noopener">罗来</a><br><a href="https://www.jianshu.com/u/a3f196404960" target="_blank" rel="noopener">朱家琪</a><br><a href="https://www.jianshu.com/u/7c3516f0e6ef" target="_blank" rel="noopener">冯亮</a><br><a href="https://www.jianshu.com/u/b09f8596202e" target="_blank" rel="noopener">杨浩1</a><br><a href="https://www.jianshu.com/u/e518b607742d" target="_blank" rel="noopener">龚江</a><br><a href="https://www.jianshu.com/u/a03977e62534" target="_blank" rel="noopener">彭良郎</a><br><a href="https://www.jianshu.com/u/a2b02778ef5d" target="_blank" rel="noopener">罗雪文</a><br><a href="https://www.jianshu.com/u/b8a95ccab0c4" target="_blank" rel="noopener">曹志华</a><br><a href="https://www.jianshu.com/u/b87c851be72a" target="_blank" rel="noopener">唐鸿湖</a><br><a href="https://www.jianshu.com/u/7ec4e3741a7f" target="_blank" rel="noopener">刘紫涵</a><br><a href="https://www.jianshu.com/u/d3b762c42d8a" target="_blank" rel="noopener">马超</a><br><a href="https://www.jianshu.com/u/20d448d19898" target="_blank" rel="noopener">权俊</a><br><a href="https://www.jianshu.com/u/3906a525ced8" target="_blank" rel="noopener">吴建成</a><br><a href="https://www.jianshu.com/u/785b6fadbc8a" target="_blank" rel="noopener">聂上钦</a><br><a href="https://www.jianshu.com/u/889de71536fe" target="_blank" rel="noopener">左璐瑶</a><br><a href="https://www.jianshu.com/u/ae8f72416a17" target="_blank" rel="noopener">徐代科</a><br><a href="https://www.jianshu.com/u/571fe9ee3825" target="_blank" rel="noopener">林依涛</a><br><a href="https://www.jianshu.com/u/901c8e1b489c" target="_blank" rel="noopener">张钰</a><br><a href="https://www.jianshu.com/u/738df24b834d" target="_blank" rel="noopener">马磊</a><br><a href="https://www.jianshu.com/u/2a2839266573" target="_blank" rel="noopener">曹琦</a><br><a href="https://www.jianshu.com/u/8e1c13d000dc" target="_blank" rel="noopener">高旭</a><br><a href="https://www.jianshu.com/u/1a180e2e2a41" target="_blank" rel="noopener">严朗</a><br><a href="https://www.jianshu.com/u/999e3a893831" target="_blank" rel="noopener">陈志豪</a><br><a href="https://www.jianshu.com/u/f240f892dfa5" target="_blank" rel="noopener">陈昱熹</a><br><a href="https://www.jianshu.com/u/5f014e181d7f" target="_blank" rel="noopener">徐闯</a><br><a href="https://www.jianshu.com/u/02a78209b08f" target="_blank" rel="noopener">巫苗</a><br><a href="https://www.jianshu.com/u/189382d30f1f" target="_blank" rel="noopener">刘浪</a><br><a href="https://www.jianshu.com/u/f6b0123d644e" target="_blank" rel="noopener">何鑫</a><br><a href="https://www.jianshu.com/u/da16cce27ca1" target="_blank" rel="noopener">郑鹏</a><br><a href="https://www.jianshu.com/u/1b3a4745dc81" target="_blank" rel="noopener">叶磊</a><br><a href="https://www.jianshu.com/u/ea68a5af9d59" target="_blank" rel="noopener">马腾</a><br><a href="https://www.jianshu.com/u/b59bbccc02c7" target="_blank" rel="noopener">林肖</a><br><a href="https://www.jianshu.com/u/e6cf2d77e8bb" target="_blank" rel="noopener">赵波强</a><br><a href="https://www.jianshu.com/u/ce7519ecc2cb" target="_blank" rel="noopener">杨广剑</a><br><a href="https://www.jianshu.com/u/57dbc2e28eb4" target="_blank" rel="noopener">贺唐林</a><br><a href="https://www.jianshu.com/u/b94fe869cd87" target="_blank" rel="noopener">卢俊臣</a><br><a href="https://www.jianshu.com/u/08bbc222bce3" target="_blank" rel="noopener">王涛</a><br><a href="https://www.jianshu.com/u/20d448d19898" target="_blank" rel="noopener">权俊</a><br><a href="https://www.jianshu.com/u/b58c7e81a376" target="_blank" rel="noopener">喻朝东</a><br><a href="https://www.jianshu.com/u/129e72eab2e7" target="_blank" rel="noopener">杨成</a><br><a href="https://www.jianshu.com/u/c2816d945ed6" target="_blank" rel="noopener">蒋鑫</a><br><a href="https://www.jianshu.com/u/e1d066d8641b" target="_blank" rel="noopener">程渝文</a><br><a href="https://www.jianshu.com/u/f01a2890fa00" target="_blank" rel="noopener">邱鲜</a></p>
+
+    </div>
+
+    
+
+    
+
+    <!-- Comments -->
+    
+
+</div>
+        </section>
+
+    </div>
+</div>
+
+
+</div>
+
+<!-- Footer -->
+<div class="push"></div>
+
+<footer class="footer-content">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 footer-about">
+                <h2>About</h2>
+                <p>
+                    This theme was developed by <a href="https://github.com/klugjo">Jonathan Klughertz</a>. The source code is available on Github. Create Websites. Make Magic.
+                </p>
+            </div>
+            
+    <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 recent-posts">
+        <h2>Recent Posts</h2>
+        <ul>
+            
+            <li>
+                <a class="footer-post" href="/2019/04/13/Hexo博客搭建/">Untitled</a>
+            </li>
+            
+            <li>
+                <a class="footer-post" href="/2019/04/13/MySQL配置/">Untitled</a>
+            </li>
+            
+            <li>
+                <a class="footer-post" href="/2019/04/13/git常用指令/">Untitled</a>
+            </li>
+            
+            <li>
+                <a class="footer-post" href="/2019/04/13/vim编辑器之神/">Untitled</a>
+            </li>
+            
+        </ul>
+    </div>
+
+
+
+            
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <ul class="list-inline footer-social-icons">
+                    
+                    <li class="list-inline-item">
+                        <a href="https://github.com/klugjo/hexo-theme-alpha-dust">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-github"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://twitter.com/?lang=en">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-twitter"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://www.facebook.com/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-facebook"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://www.instagram.com/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-instagram"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://dribbble.com/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-dribbble"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://plus.google.com/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-google-plus"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://www.behance.net/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-behance"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="https://500px.com/">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-500px"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="mailto:test@example.com">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-envelope-o"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                    
+                    <li class="list-inline-item">
+                        <a href="\#">
+                            <span class="footer-icon-container">
+                                <i class="fa fa-rss"></i>
+                            </span>
+                        </a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <div class="footer-copyright">
+                    @Untitled. All right reserved | Design & Hexo <a href="http://www.codeblocq.com/">Jonathan Klughertz</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<!-- After footer scripts -->
+
+<!-- jQuery -->
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+
+<!-- Tween Max -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.5/TweenMax.min.js"></script>
+
+<!-- Gallery -->
+<script src="//cdnjs.cloudflare.com/ajax/libs/featherlight/1.3.5/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+
+<!-- Custom JavaScript -->
+<script src="/js/main.js"></script>
+
+<!-- Disqus Comments -->
+
+
+
+</body>
+
+</html>
