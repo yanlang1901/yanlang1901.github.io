@@ -44,7 +44,7 @@
 
     <!-- Title -->
     
-    <title>Archives: 2019/4 - ShallowDream</title>
+    <title>ShallowDream</title>
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
@@ -131,9 +131,7 @@
 <div class="container">
 
     <!-- Main Content -->
-    
-
-<div class="row">
+    <div class="row">
     <div class="col-sm-12">
 
         <!--Title and Logo-->
@@ -141,88 +139,75 @@
     <div class="logo">
         <a href="/"><i class="logo-icon fa fa-cube" aria-hidden="true"></i></a>
         
-            <h1 id="main-title" class="title">2019/4</h1>
-        
     </div>
 </header>
 
-        <section class="main archive-container">
+        <section class="main">
             
-                <div class="archive-post">
-    <a href="/2019/04/13/Hexo博客搭建/">
-        <span class="archive-date">
-            Apr 2019
-        </span>
-        Untitled
-    </a>
+<div class="post">
+
+    <div class="post-header">
+        <h1 class="title">
+            <a href="/2019/04/15/blog/">
+                Untitled
+            </a>
+        </h1>
+        <div class="post-info">
+            
+                <span class="date">2019-04-15</span>
+            
+            
+            
+        </div>
+    </div>
+
+    <div class="content">
+
+        <!-- Gallery -->
+        
+
+        <!-- Post Content -->
+        <h1 id="使用Hexo搭建个人博客"><a href="#使用Hexo搭建个人博客" class="headerlink" title="使用Hexo搭建个人博客"></a>使用Hexo搭建个人博客</h1><ol>
+<li><p>准备工作<br>~ 安装node.js —&gt; npm —&gt; hexo-cli<br>~ 安装git —&gt; 版本控制工具</p>
+</li>
+<li><p>更换npm（nodejs package manager）源<br>npm config set registry <a href="http://registry.npm.taobao.org/" target="_blank" rel="noopener">http://registry.npm.taobao.org/</a></p>
+</li>
+<li><p>安装hexo-cli<br>npm install -g hexo-cli</p>
+</li>
+<li><p>使用hexo搭建博客<br>hexo init blog —&gt; 创建博客目录<br>cd blog —&gt; 进入目录<br>npm install —&gt; 安装项目依赖项</p>
+</li>
+<li><p>编辑博客<br>把写好的markdown文件放到source/_posts目录下<br>hexo generate —&gt; 用markdown生成博客页面</p>
+</li>
+<li>将博客托管到github<br>github提供了pages服务专门用来托管个人网站<br>注册github账号并登陆，创建一个托管网站代码的仓库<br>仓库的名字必须是：用户名.github.io</li>
+</ol>
+<p>修改博客的配置文件：_config.yml</p>
+<p><a href="https://github.com/hellokitty12345678/hellokitty12345678.github.io.git" target="_blank" rel="noopener">https://github.com/hellokitty12345678/hellokitty12345678.github.io.git</a></p>
+<p>deploy:<br>  type: git<br>  repo: 仓库的完整的URL<br>  branch: master</p>
+<ol start="7">
+<li>将博客部署到github<br>安装git部署器<br>npm install hexo-deployer-git –save</li>
+</ol>
+<p>如果第一次使用git需要先配置用户名和邮箱（可以乱写）<br>git config –global user.email “<a href="mailto:hellokitty@qq.com" target="_blank" rel="noopener">hellokitty@qq.com</a>“<br>git config –global user.name “hellokitty”</p>
+<p>执行部署操作<br>hexo deploy -g</p>
+<p>此操作会提示输入github的账号和密码<br>输入密码时没有回显必须一气呵成的输入完成<br>否则重新执行上面的命令</p>
+<ol start="8">
+<li>绑定自己的域名<br>打开阿里云的控制台 <a href="https://aliyun.com" target="_blank" rel="noopener">https://aliyun.com</a> 登录进去<br>进入“域名控制台” —&gt; “进入域名解析列表” —&gt; 找到自己的域名<br>—&gt; “解析设置” —&gt; “添加记录” —&gt;</li>
+</ol>
+
+    </div>
+
+    
+
+    
+
+    <!-- Comments -->
+    
+
 </div>
-            
-                <div class="archive-post">
-    <a href="/2019/04/13/MySQL配置/">
-        <span class="archive-date">
-            Apr 2019
-        </span>
-        Untitled
-    </a>
-</div>
-            
-                <div class="archive-post">
-    <a href="/2019/04/13/Nginx服务器安装/">
-        <span class="archive-date">
-            Apr 2019
-        </span>
-        Untitled
-    </a>
-</div>
-            
-                <div class="archive-post">
-    <a href="/2019/04/15/blog/">
-        <span class="archive-date">
-            Apr 2019
-        </span>
-        Untitled
-    </a>
-</div>
-            
-                <div class="archive-post">
-    <a href="/2019/04/13/git常用指令/">
-        <span class="archive-date">
-            Apr 2019
-        </span>
-        Untitled
-    </a>
-</div>
-            
-                <div class="archive-post">
-    <a href="/2019/04/15/linux/">
-        <span class="archive-date">
-            Apr 2019
-        </span>
-        Untitled
-    </a>
-</div>
-            
-                <div class="archive-post">
-    <a href="/2019/03/15/python1901简书地址/">
-        <span class="archive-date">
-            Mar 2019
-        </span>
-        Untitled
-    </a>
-</div>
-            
-                <div class="archive-post">
-    <a href="/2019/04/13/vim编辑器之神/">
-        <span class="archive-date">
-            Apr 2019
-        </span>
-        Untitled
-    </a>
-</div>
-            
         </section>
+
     </div>
 </div>
+
 
 </div>
 
